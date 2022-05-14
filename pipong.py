@@ -39,3 +39,11 @@ FPS = 60
 racket_1 = Player('racket.png', 60, 400, 8, 100, 300)
 racket_2 = Player('racket.png', 1400, 400, 8, 100, 300)
 ball = GameSprite('square.png', 540, 400, 8, 100, 100)
+
+font.init()
+font = font.Font(None, 35)
+win1 = font.render('PLAYER 1 WINS!!!', True, (0, 204, 0))
+win2 = font.render('PLAYER 2 WINS!!!', True, (0, 204, 0))
+
+speed_x = 3
+speed_y = 3
