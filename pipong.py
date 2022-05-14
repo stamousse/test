@@ -24,3 +24,18 @@ class Player(GameSprite):
 			self.rect.y -self.speed
 		if keys[K_s] and self .rect.y < win_height - 80:
 			self.rect.y += self.speed
+
+background = (0, 153, 153)
+win_width = 1200
+win_height = 1000
+window = display.set_mode((win_width, win_height))
+window.fill(background)
+
+game = True
+finish = False
+clock = time.Clock()
+FPS = 60
+
+racket_1 = Player('racket.png', 60, 400, 8, 100, 300)
+racket_2 = Player('racket.png', 1400, 400, 8, 100, 300)
+ball = GameSprite('square.png', 540, 400, 8, 100, 100)
